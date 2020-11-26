@@ -17,8 +17,14 @@ public class Escuela {
 		return this.nivel;
 	}
 	
+	//sobreescribimos el metodo equals
+	public boolean equals(Object o) {
+		//casting hacia un objeto de la clase Escuela
+		Escuela otraEscuela = (Escuela) o;
+		return (otraEscuela.nombre == nombre) && (otraEscuela.nivel == nivel);
+	}
+	
 	public String toString() {
 		return "NOMBRE: " + nombre + " -- "+"  NIVEL: " + nivel;
 	}
-
 }
