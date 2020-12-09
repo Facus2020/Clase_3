@@ -42,6 +42,8 @@ public class Libreta {
 			
 			//Metodo para eliminar posicion
 			LibretaFacu.remove(pos);
+			
+			System.out.println("La posición: " + pos + " ha sido eliminada");
 					
 		}
 	}		
@@ -50,6 +52,8 @@ public class Libreta {
 			
 		//Metodo para eliminar registro si es que ya esta.
 			LibretaFacu.remove(nom);
+			
+			System.out.println("El nombre: " + nom + " ha sido eliminado");
 	
 	}	
 	
