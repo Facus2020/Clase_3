@@ -48,6 +48,7 @@ Scanner Leer = new Scanner(System.in);
 				int posicionaeliminar = Leer.nextInt();
 				
 				miLibretita.posicionAremover(posicionaeliminar);
+				System.out.println("                                                ");
 				miLibretita.listarLibreta();
 			
 			} 
@@ -58,13 +59,14 @@ Scanner Leer = new Scanner(System.in);
 				String nombreaeliminar = Leer.next();
 				
 				miLibretita.nombreAremover(nombreaeliminar);
+				System.out.println("                                                ");
 				miLibretita.listarLibreta();
 			}
 			
 			if (opciones == 3) {
 				
-				System.out.println("La lista completa quedará asi");
-				
+				System.out.println("La lista completa quedará asi: ");
+				System.out.println("                                                ");
 				miLibretita.listarLibreta();
 			}					
 			

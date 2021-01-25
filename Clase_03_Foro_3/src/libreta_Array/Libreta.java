@@ -34,27 +34,26 @@ public class Libreta {
 	
 	public void posicionAremover(int pos) {
 		
-		//le ponemos -1 porque el usuario tiene dif numeros del registro
-		pos = pos - 1;
-							
-		//condicional para delimitar tamaño
-		if((pos >= 0) && (pos < LibretaFacu.size() )) {
-			
+		try{
 			//Metodo para eliminar posicion
 			LibretaFacu.remove(pos);
 			
 			System.out.println("La posición: " + pos + " ha sido eliminada");
-					
-		}
+			
+		}catch (IndexOutOfBoundsException F){
+			
+            System.out.println("Excepción generada. Revise el error! -----> " + F);
+        }
 	}		
 		
 	public void nombreAremover(String nom) {
-			
+		
 		//Metodo para eliminar registro si es que ya esta.
-			LibretaFacu.remove(nom);
-			
-			System.out.println("El nombre: " + nom + " ha sido eliminado");
+		LibretaFacu.remove(nom);
 	
+			System.out.println("El nombre: " + nom + " ha sido eliminado");
+			
+		
 	}	
 	
 	
